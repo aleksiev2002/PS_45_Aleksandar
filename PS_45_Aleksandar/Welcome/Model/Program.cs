@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Welcome.Model
 {
-    internal class Class1
+    internal class Program
     {
+        static void Main(string[] args)
+        {
+            User u = new User();
+        }
     }
 }
