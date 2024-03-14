@@ -1,32 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Welcome.Others;
+﻿using Welcome.Others;
 
 namespace Welcome.Model
 {
-    internal class User
+    public class User
     {
-        private string name;
+        private string _name;
         public string Names
         {
-            get { return name; }
-            set { name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
-        private string password;
+        private string _password;
         public string Password 
-        { get => password; set => password = value; }
+        {
+            get { return _password; }
+            set { _password = value; }
+        }
 
         private UserRolesEnum role;
-        public UserRolesEnum Role { get => role; set => role = value; }
+        public UserRolesEnum Role { 
+            get { return role; }
+            set {  role = value; }
+        }
 
+        public int Id { get; set; }
 
+        public DateTime? Expires { get; set; }
 
+        public User(string name, string password, UserRolesEnum role)
+        {
+            _name = name;
+            _password = password;
+            this.role = role;
+        }
 
-
-
+        public User()
+        {
+        }
     }
 }

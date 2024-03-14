@@ -7,7 +7,7 @@ using Welcome.ViewModel;
 
 namespace Welcome.View
 {
-    internal class UserView
+    public class UserView
     {
 
         public UserViewModel _viewModel;
@@ -21,6 +21,11 @@ namespace Welcome.View
         {
             Console.WriteLine(_viewModel.Names);
             Console.WriteLine(_viewModel.Role);
+        }
+
+        public void DisplayError()
+        {
+            throw new Exception("Error");
         }
     }
 }
