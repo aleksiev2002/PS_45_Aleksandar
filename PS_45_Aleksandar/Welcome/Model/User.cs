@@ -24,7 +24,7 @@ namespace Welcome.Model
             set {  role = value; }
         }
 
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
 
         public DateTime? Expires { get; set; }
 
