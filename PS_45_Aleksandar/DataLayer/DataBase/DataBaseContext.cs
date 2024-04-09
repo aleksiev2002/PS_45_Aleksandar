@@ -24,6 +24,7 @@ namespace DataLayer.DataBase
 
             var user = new DatabaseUser
             {
+                Id = 1,
                 Names = "John Doe",
                 Password = "1234",
                 Role = UserRolesEnum.ADMIN,
